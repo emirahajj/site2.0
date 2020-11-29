@@ -10,6 +10,11 @@
   font-family: "Calibre-Regular";
   src: url("./fonts/calibre-test-regular.woff");
 }
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
 p{
   font-family: "Calibre-Regular";
 }

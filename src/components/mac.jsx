@@ -44,7 +44,7 @@ export default class Mac extends Component {
       targets: ["st0", "st2"],
     })
     const fadeIn = anime({
-      targets: ['.face', '.texty'], 
+      targets: ['.face', '.texty', '.empty'], 
       opacity: 1, 
       duration: 300, 
       easing: 'linear', 
@@ -117,26 +117,42 @@ export default class Mac extends Component {
             <g class="stroke-current text-gray-700" id="mac">
               <g className="boxy">
               <path
-                  class="st0 outeroutline"
-                  fill="#8B8B94"
-                  d="M3.2,17.5v92.1c0,2.4,2,4.4,4.4,4.4h92.2c2.4,0,4.4-2,4.4-4.4V17.4c0-7.3-5.9-13.2-13.2-13.2H16.4
-                  C9.1,4.3,3.2,10.2,3.2,17.5z"/>
-                <path
-                  class="st0"
-                  fill="#FFFFFF"
-                  d="M16.3,25.1v50.5c0,4.2,3.4,7.7,7.7,7.7h59.3c4.2,0,7.7-3.4,7.7-7.7V25.1c0-4.2-3.4-7.7-7.7-7.7H24
-                  C19.8,17.4,16.3,20.9,16.3,25.1z"/> 
-
-
-                
-                <path class="st1 line" d="M66.8,96.5h22H66.8z"/>
-                <path class="st1 line" d="M18.5,100.9h8.8H18.5z"/>
-
-                <path
-                  class="st2 bottom_panel"
+                  class="empty opacity-0"
                   fill="#8B8B94"
                   d="M8.9,114h89.2c0.9,0,1.7,0.8,1.7,1.7v11.5c0,2.4-2,4.4-4.4,4.4H11.9c-2.4,0-4.4-2-4.4-4.4v-11.9
                   C7.5,114.6,8.1,114,8.9,114z"/>
+              <path
+                  class="empty opacity-0"
+                  fill="#8B8B94"
+                  d="M3.2,17.5v92.1c0,2.4,2,4.4,4.4,4.4h92.2c2.4,0,4.4-2,4.4-4.4V17.4c0-7.3-5.9-13.2-13.2-13.2H16.4
+                  C9.1,4.3,3.2,10.2,3.2,17.5z"/>
+
+                <path
+                  class="empty opacity-0"
+                  fill="#FFFFFF"
+                  d="M16.3,25.1v50.5c0,4.2,3.4,7.7,7.7,7.7h59.3c4.2,0,7.7-3.4,7.7-7.7V25.1c0-4.2-3.4-7.7-7.7-7.7H24
+                  C19.8,17.4,16.3,20.9,16.3,25.1z"/> 
+              <path
+                  class="st2 bottom_panel"
+                  fill="none"
+                  d="M8.9,114h89.2c0.9,0,1.7,0.8,1.7,1.7v11.5c0,2.4-2,4.4-4.4,4.4H11.9c-2.4,0-4.4-2-4.4-4.4v-11.9
+                  C7.5,114.6,8.1,114,8.9,114z"/>
+              <path
+                  class="st0 outeroutline"
+                  fill="none"
+                  d="M3.2,17.5v92.1c0,2.4,2,4.4,4.4,4.4h92.2c2.4,0,4.4-2,4.4-4.4V17.4c0-7.3-5.9-13.2-13.2-13.2H16.4
+                  C9.1,4.3,3.2,10.2,3.2,17.5z"/>
+
+                <path
+                  class="st0"
+                  fill="none"
+                  d="M16.3,25.1v50.5c0,4.2,3.4,7.7,7.7,7.7h59.3c4.2,0,7.7-3.4,7.7-7.7V25.1c0-4.2-3.4-7.7-7.7-7.7H24
+                  C19.8,17.4,16.3,20.9,16.3,25.1z"/> 
+
+                <path class="st1 line" d="M66.8,96.5h22H66.8z"/>
+                <path class="st1 line" d="M18.5,100.9h8.8H18.5z"/>
+
+
               </g>
 
               <g class="fill-current" id="eyes">

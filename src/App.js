@@ -39,17 +39,21 @@ export default class App extends Component {
   }
   render() {
     return (
-      <div className="App bg-main">
-        <div className="fixed">
+      
+      <div className="App bg-gradient-to-r from-green-300 to-blue-400 -mt-1">
+
+        <div className="fixed w-full">
           <svg
             version="1.1"
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width={window.innerWidth < 1024
-            ? "800%"
-            : "1005%"}
+            // width={window.innerWidth < 1024
+            // ? "800%"
+            // : "1005%"}
+            width="100%"
+            height="100%"
             viewBox="0 0 1920 1080"
             enable-background="new 0 0 1920 1080">
             <defs>
