@@ -10,7 +10,7 @@ export default function about() {
       </div>
       <div class="intro max-w-xs  md:ml-6 lg:mt-6">
         <h1 class='text-gray-300 -ml-12 text-6xl text-left leading-12 md:-ml-16 md:text-8xl'>Hello.</h1>
-        <p class="hidden text-gray-600 text-2xl leading-6 md:contents md:leading-none md:text-2xl md:mt-2 md:text-left">
+        <p class="hidden text-gray-700 text-2xl leading-6 md:contents md:leading-none md:text-2xl md:mt-2 md:text-left">
         I'm a computer science 
           student in New York City. When I'm not programming, I like to make
           music, vector art, and AR filters for Instagram.
