@@ -18,6 +18,10 @@
 p{
   font-family: "Calibre-Regular";
 }
+
+.icon{
+  fill: #692657
+}
 .st0 {
     stroke-width: 5;
     stroke-miterlimit: 10;

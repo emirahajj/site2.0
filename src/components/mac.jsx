@@ -1,9 +1,8 @@
 import React, {Component} from "react";
 import anime from "animejs";
 
-
 export default class Mac extends Component {
-  constructor(){
+  constructor() {
     super();
     this.state = {
       macw: '',
@@ -11,17 +10,14 @@ export default class Mac extends Component {
       finaloffset: ''
     };
   }
+  componentDidUpdate
 
   componentDidMount() {
     this.animation();
     let div = this.divvy.offsetWidth;
     let mac = this.maccy.offsetWidth;
-    let final = div/2 + mac/2;
-    this.setState({
-      divw: div,
-      macw: mac,
-      finaloffset: final
-    });
+    let final = div / 2 + mac / 2;
+    this.setState({divw: div, macw: mac, finaloffset: final});
   }
 
   animation() {
@@ -38,22 +34,23 @@ export default class Mac extends Component {
         return 600 + i * 300
       },
       direction: 'alternate',
-      loop: false,
+      loop: false
     });
-    const color = anime({
-      targets: ["st0", "st2"],
-    })
     const fadeIn = anime({
-      targets: ['.face', '.texty', '.empty'], 
-      opacity: 1, 
-      duration: 300, 
-      easing: 'linear', 
-      delay: 3600,
+      targets: [
+        '.face', '.texty', '.empty'
+      ],
+      opacity: 1,
+      duration: 300,
+      easing: 'linear',
+      delay: 3600
     });
     const moveback = anime({
-      targets: ['.biggy'], 
-      translateX:  window.innerWidth > 1024 ? -181 : 0,
-      duration: 851, 
+      targets: ['.biggy'],
+      translateX: window.innerWidth > 1024
+        ? -181
+        : 0,
+      duration: 851,
       delay: 3100,
       easing: 'easeInOutExpo'
 
@@ -72,6 +69,7 @@ export default class Mac extends Component {
       loop: true,
       delay: 4400
     });
+
     const blink2 = anime({
       targets: ".left",
       d: {
@@ -87,7 +85,6 @@ export default class Mac extends Component {
       delay: 4400
     });
   }
-  
 
   render() {
 
@@ -98,13 +95,21 @@ export default class Mac extends Component {
 
     //console.log("final offset: ", finaloffset);
 
-  
     return (
-        <div class="flex biggy flex-col lg:flex-row "
-        ref= {divvy => {this.divvy = divvy}}
-        style={{marginLeft: window.innerWidth >1024 ? this.state.finaloffset : 0}}>
-        <div class="svg-container flex items-center justify-center"
-        ref= {maccy => {this.maccy = maccy}}>
+      <div
+        class="flex biggy flex-col lg:flex-row "
+        ref=
+        {divvy => {this.divvy = divvy}}
+        style={{
+        marginLeft: window.innerWidth > 1024
+          ? this.state.finaloffset
+          : 0
+      }}>
+        <div
+          class="svg-container z-10 flex items-center justify-center"
+          ref=
+          {maccy => {this.maccy = maccy}}>
+
           <svg
             class="mineline w-32 lg:w-48"
             version="1.1"
@@ -112,16 +117,17 @@ export default class Mac extends Component {
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
+            width="100%"
             viewBox="0 0 107.2 135.1">
 
-            <g class="stroke-current text-gray-700" id="mac">
+            <g class="stroke-current text-gray-900" id="mac">
               <g className="boxy">
-              <path
+                <path
                   class="empty opacity-0"
                   fill="#8B8B94"
                   d="M8.9,114h89.2c0.9,0,1.7,0.8,1.7,1.7v11.5c0,2.4-2,4.4-4.4,4.4H11.9c-2.4,0-4.4-2-4.4-4.4v-11.9
                   C7.5,114.6,8.1,114,8.9,114z"/>
-              <path
+                <path
                   class="empty opacity-0"
                   fill="#8B8B94"
                   d="M3.2,17.5v92.1c0,2.4,2,4.4,4.4,4.4h92.2c2.4,0,4.4-2,4.4-4.4V17.4c0-7.3-5.9-13.2-13.2-13.2H16.4
@@ -131,13 +137,13 @@ export default class Mac extends Component {
                   class="empty opacity-0"
                   fill="#FFFFFF"
                   d="M16.3,25.1v50.5c0,4.2,3.4,7.7,7.7,7.7h59.3c4.2,0,7.7-3.4,7.7-7.7V25.1c0-4.2-3.4-7.7-7.7-7.7H24
-                  C19.8,17.4,16.3,20.9,16.3,25.1z"/> 
-              <path
+                  C19.8,17.4,16.3,20.9,16.3,25.1z"/>
+                <path
                   class="st2 bottom_panel"
                   fill="none"
                   d="M8.9,114h89.2c0.9,0,1.7,0.8,1.7,1.7v11.5c0,2.4-2,4.4-4.4,4.4H11.9c-2.4,0-4.4-2-4.4-4.4v-11.9
                   C7.5,114.6,8.1,114,8.9,114z"/>
-              <path
+                <path
                   class="st0 outeroutline"
                   fill="none"
                   d="M3.2,17.5v92.1c0,2.4,2,4.4,4.4,4.4h92.2c2.4,0,4.4-2,4.4-4.4V17.4c0-7.3-5.9-13.2-13.2-13.2H16.4
@@ -147,11 +153,10 @@ export default class Mac extends Component {
                   class="st0"
                   fill="none"
                   d="M16.3,25.1v50.5c0,4.2,3.4,7.7,7.7,7.7h59.3c4.2,0,7.7-3.4,7.7-7.7V25.1c0-4.2-3.4-7.7-7.7-7.7H24
-                  C19.8,17.4,16.3,20.9,16.3,25.1z"/> 
+                  C19.8,17.4,16.3,20.9,16.3,25.1z"/>
 
                 <path class="st1 line" d="M66.8,96.5h22H66.8z"/>
                 <path class="st1 line" d="M18.5,100.9h8.8H18.5z"/>
-
 
               </g>
 
@@ -179,11 +184,12 @@ export default class Mac extends Component {
           </svg>
 
         </div>
-        <div class="texty flex flex-col opacity-0 justify-center mt-6 lg:ml-8">
-              <h1 class="text-gray-300 text-center lg:text-left text-6xl xl:text-8xl leading-12">I'm Emira,</h1>
-              <p class="text-accent1 text-center lg:text-left text-3xl">web and software developer.</p>
-            </div>
 
+        <div class="texty flex z-10 flex-col opacity-0 w-96 justify-center mt-6 lg:ml-8">
+          <h1
+            class="text-gray-100 text-center lg:text-left text-6xl xl:text-8xl leading-12">I'm Emira,</h1>
+          <p class="text-accent1 text-center lg:text-left text-3xl">web and software developer.</p>
+        </div>
 
       </div>
 

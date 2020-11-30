@@ -5,7 +5,7 @@ export default class Card extends Component {
   // maybe access them somehow here
   render() {
     return (
-      <div className="projjy relative mt-12 justify-self-center mb-12 max-w-xs lg:max-w-sm ">
+      <div className="projjy relative mt-12 justify-self-center mb-12 max-w-xs lg:max-w-sm">
         <div className="flex relative z-20">
         <img
           className="w-20 h-20 -mt-10 -ml-10 absolute inline-block"
