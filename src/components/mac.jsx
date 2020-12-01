@@ -47,7 +47,7 @@ export default class Mac extends Component {
     });
     const moveback = anime({
       targets: ['.biggy'],
-      translateX: window.innerWidth > 1024
+      translateX: window.innerWidth > 768
         ? -181
         : 0,
       duration: 851,
@@ -96,12 +96,14 @@ export default class Mac extends Component {
     //console.log("final offset: ", finaloffset);
 
     return (
+      <div className="flex flex-col lg:flex-row justify-center items-center w-full min-h-screen">
+
       <div
-        class="flex biggy flex-col lg:flex-row "
+        class="flex biggy flex-col md:flex-row "
         ref=
         {divvy => {this.divvy = divvy}}
         style={{
-        marginLeft: window.innerWidth > 1024
+        marginLeft: window.innerWidth > 768
           ? this.state.finaloffset
           : 0
       }}>
@@ -111,7 +113,7 @@ export default class Mac extends Component {
           {maccy => {this.maccy = maccy}}>
 
           <svg
-            class="mineline w-32 lg:w-48"
+            class="mineline w-32 md:w-48"
             version="1.1"
             id="Layer_2_1_"
             xmlns="http://www.w3.org/2000/svg"
@@ -185,12 +187,13 @@ export default class Mac extends Component {
 
         </div>
 
-        <div class="texty flex z-10 flex-col opacity-0 w-96 justify-center mt-6 lg:ml-8">
+        <div class="texty flex z-10 flex-col opacity-0 w-96 justify-center mt-6 md:ml-8">
           <h1
-            class="text-gray-100 text-center lg:text-left text-6xl xl:text-8xl leading-12">I'm Emira,</h1>
-          <p class="text-accent1 text-center lg:text-left text-3xl">web and software developer.</p>
+            class="text-gray-100 text-center md:text-left text-6xl xl:text-8xl leading-12">I'm Emira,</h1>
+          <p class=" text-purp2 bold text-center md:text-left text-3xl">web and software developer.</p>
         </div>
 
+      </div>
       </div>
 
     )

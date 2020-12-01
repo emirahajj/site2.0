@@ -3,7 +3,7 @@ import chess from "./bbchess.png"
 import flix from "./flixter.png"
 import cpp from "./c++.svg"
 import ract from "./react.svg"
-import tw from "./tw.png"
+import arhub from "./arhub.svg"
 import sw from "./swift.svg"
 
 const projects = [
@@ -26,6 +26,11 @@ const projects = [
     description: 'A simple command line chess game written in C++. First player to reach other end of the board' +
         ' wins.',
         lang: cpp
+  }   , {
+    title: 'AR Filters',
+    img: chess,
+    description: "Some AR filters I designed for Instagram using Facebook's Spark AR Studio with over 100K impressions to date.",
+        lang: arhub
   }
 ]
 export default projects;

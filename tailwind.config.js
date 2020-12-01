@@ -2,6 +2,9 @@
 module.exports = {
   theme: {
     extend: {
+      screens: {
+        'xs': '480px',
+      },
       colors: {
             main: "#333950",	/* Main Primary color */
             accent1: "#8086A0", 

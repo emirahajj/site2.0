@@ -19,6 +19,10 @@ p{
   font-family: "Calibre-Regular";
 }
 
+.bold{
+  font-family: "Calibre-Semibold";
+}
+
 .icon{
   fill: #692657
 }
