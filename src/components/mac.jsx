@@ -10,7 +10,6 @@ export default class Mac extends Component {
       finaloffset: ''
     };
   }
-  componentDidUpdate
 
   componentDidMount() {
     this.animation();
@@ -48,7 +47,7 @@ export default class Mac extends Component {
     const moveback = anime({
       targets: ['.biggy'],
       translateX: window.innerWidth > 768
-        ? -181
+        ? -195
         : 0,
       duration: 851,
       delay: 3100,
@@ -99,7 +98,7 @@ export default class Mac extends Component {
       <div className="flex flex-col lg:flex-row justify-center items-center w-full min-h-screen">
 
       <div
-        class="flex biggy flex-col md:flex-row "
+        class="flex biggy flex-col max-w-screen-xl md:flex-row  "
         ref=
         {divvy => {this.divvy = divvy}}
         style={{
@@ -126,12 +125,12 @@ export default class Mac extends Component {
               <g className="boxy">
                 <path
                   class="empty opacity-0"
-                  fill="#8B8B94"
+                  fill="#9C9CA5"
                   d="M8.9,114h89.2c0.9,0,1.7,0.8,1.7,1.7v11.5c0,2.4-2,4.4-4.4,4.4H11.9c-2.4,0-4.4-2-4.4-4.4v-11.9
                   C7.5,114.6,8.1,114,8.9,114z"/>
                 <path
                   class="empty opacity-0"
-                  fill="#8B8B94"
+                  fill="#9C9CA5"
                   d="M3.2,17.5v92.1c0,2.4,2,4.4,4.4,4.4h92.2c2.4,0,4.4-2,4.4-4.4V17.4c0-7.3-5.9-13.2-13.2-13.2H16.4
                   C9.1,4.3,3.2,10.2,3.2,17.5z"/>
 
@@ -189,7 +188,7 @@ export default class Mac extends Component {
 
         <div class="texty flex z-10 flex-col opacity-0 w-96 justify-center mt-6 md:ml-8">
           <h1
-            class="text-gray-100 text-center md:text-left text-6xl xl:text-8xl leading-12">I'm Emira,</h1>
+            class="text-gray-100 text-center md:text-left text-7xl leading-14">I'm Emira,</h1>
           <p class=" text-purp2 bold text-center md:text-left text-3xl">web and software developer.</p>
         </div>
 

@@ -26,7 +26,7 @@ export default class App extends Component {
         {value: "M-0.5,0.5h1920v884c-207.8-19.9-222.6,153.9-510.8-97.5C1116,531.7,930,488.9,560.2,633.3C315.2,739,54.7,453-0.5,431.5V0.5z"
             },
           ],
-      duration: 7000,
+      duration: 14000,
       direction: 'alternate',
       autoplay: true,
       easing: 'linear',
@@ -76,7 +76,7 @@ export default class App extends Component {
           <h1 className="text-gray-100 text-8xl text-center mb-24">Projects</h1>
           <div className="flex flex-col items-center">
             <div
-              className="grid grid-cols-1 items-center justify-around min-h-screen lg:flex lg:flex-row lg:max-w-screen-lg lg:flex-wrap ">
+              className="grid grid-cols-1 items-center justify-around min-h-screen lg:grid-cols-2 gap-x-56 xl:gap-x-80 lg:max-w-screen-xl lg:flex-wrap ">
               {projects.map((project) => (createCard(project)))}
             </div>
           </div>
@@ -87,7 +87,7 @@ export default class App extends Component {
                 <h1 className="text-gray-100 relative z-10 text-4xl md:text-6xl text-center">Get in touch</h1>
                 <p
                   className="text-purp2 bold text-xl md:text-2xl mt-6 leading-tight text-center">
-                  I'm actively looking for full-time and internship SWE roles. Feel free to
+                  I'm actively applying to full-time and internship SWE roles. Feel free to
                   connect on LinkedIn or via email.
                 </p>
 

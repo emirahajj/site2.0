@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Calibre-Semibold";
-  src: url("./fonts/calibre-test-semibold.woff");
+  font-family: "Galyon-Bold";
+  src: url("./fonts/Galyon-Bold.woff2");
 }
 @font-face {
-  font-family: "Calibre-Regular";
-  src: url("./fonts/calibre-test-regular.woff");
+  font-family: "Galyon-Regular";
+  src: url("./fonts/Galyon-Regular.woff2");
+}
+@font-face {
+  font-family: "Galyon-Italic";
+  src: url("./fonts/Galyon-Italic.woff2");
 }
 
 *{
@@ -16,11 +20,12 @@
   padding: 0px;
 }
 p{
-  font-family: "Calibre-Regular";
+  font-family: "Galyon-Regular";
 }
 
-.bold{
-  font-family: "Calibre-Semibold";
+h1, .bold{
+  font-family: "Galyon-Bold";
+  letter-spacing: -0.025em;
 }
 
 .icon{
